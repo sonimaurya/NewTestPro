@@ -1,9 +1,1 @@
---- C:\Users\USER\AppData\Local\Temp\a4Z03T_1.txt
-+++ C:\Users\USER\AppData\Local\Temp\B5103T_1.txt
-@@ -1,4 +1 @@
--body{
--	padding:20px;
--}
--sakjsfakjjsafhj fsajhk
-+kjdsnkjds hag
 
