@@ -1,12 +1,14 @@
 # Add the following to your .gitconfig file.
 [diff]
-  tool = meld
-[difftool "meld"]
-  path = C:\\Program Files (x86)\\Meld\\Meld.exe
+    tool = meld
 [difftool]
-	prompt  false
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
 # Add the following to your .gitconfig file.
 [merge]
-  tool = meld
+    tool = meld
 [mergetool "meld"]
-  path = C:\\Program Files (x86)\\Meld\\Meld.exe
+    # Choose one of these 2 lines (not both!) explained below.
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
